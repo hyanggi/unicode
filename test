@@ -1,0 +1,18 @@
+#!/usr/bin/env bash
+
+# This script outputs some Unicode strings with characters that combine with each other.
+
+# Combining characters
+echo 'ǚǚ' # Latin
+echo 'อั' # Thai
+echo 'कि' # Devanagari
+
+# Other characters that combine
+echo '한한' # Conjoining Hangul Jamo
+echo '˨˩˦' # Tone marks (Tone 214)
+
+# Emoji
+echo '3⃣ 3️⃣' # Enclosing Keycap
+echo '👌🏻' # Emoji skin color modifier
+echo '🇺🇳' # Regional indicator symbols
+echo '🏴󠁧󠁢󠁥󠁮󠁧󠁿' # Tags

@@ -1,0 +1,27 @@
+#!/usr/bin/env bash
+
+# This script outputs some strings for testing Unicode text flow control characters.
+
+# Fraction
+echo '2 13⁄17' # May render as 13 being like superscripts and 17 being like subscripts.
+
+# Unicode line separator and paragraph separator
+echo 'A↵ a¶ B'
+
+# Line-break control
+echo 'aa­bb ' # Soft hyphen
+echo 'aa​bb ' # Zero-width space
+echo '不⁠可⁠断' # Word joiner
+echo 'no br ' # No-break space
+echo 'no‑br‐' # Non-breaking hyphen and (normal) hyphen
+
+# Bi-directional control
+echo '"אב ab" 12' # No control (OK but we want all things in the quotes to follow Hebrew direction.)
+echo '"‫אב ab‬" 12' # RTL Embedding (Good but the following '" 12' also followed Hebrew direction.)
+echo '"‫אב ab‬‎" 12' # RTL Embedding + LTR Mark (All good.)
+echo '"⁧אב ab⁩" 12' # RTL Isolate (All good.)
+echo '文字方向' # No control
+echo '‮文字方向‬' # RTL Override
+
+# Interlinear annotation
+echo '￹base￺ruby￻'

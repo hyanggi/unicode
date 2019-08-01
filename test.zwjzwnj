@@ -1,0 +1,23 @@
+#!/usr/bin/env bash
+
+# This script outputs some strings for testing Unicode zero-width joiner and zero-width non-joiner.
+
+# Latin (font support required)
+echo 'fi f‌i' # ZWNJ to inhibit the ligated or cursively connected form
+echo 'tz t‍z' # ZWJ to request uncommon ligated form (supported font: Libertinus Serif)
+
+# Arabic
+echo 'ج  ‍ج' # ZWJ to request the connected form
+echo 'وج و‍ج' # ZWJ to request the connected form
+echo 'لا ل‍ا' # ZWJ to request the connected form
+echo 'لا ل‌ا' # ZWNJ to inhibit the ligated or connected form
+
+# Indic scripts
+echo 'क् क्‍ ' # ZWJ to request the "half-form" (Devanagari)
+echo 'क्ष क्‍ष' # ZWJ to request the "half-form"  (Devanagari)
+echo 'क्ष क्‌ष' # ZWNJ to inhibit the conjunct form (Devanagari)
+
+# Emoji (ZWJ sequences)
+echo '👨‍👩‍👦'
+echo '👩‍💼'
+echo '👩‍🦰'

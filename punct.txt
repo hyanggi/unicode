@@ -1,0 +1,79 @@
+Unicode Typography
+
+Apostrophe:
+ '  Typewriter apostrophe (same code point as typewriter single quote)
+ ’  Punctuation apostrophe (same code point as right single quotation mark)
+ ʼ  Modifier letter apostrophe
+
+Prime:
+ ′  Prime
+ ″  Double prime
+ ‴  Triple prime
+ ⁗  Quadruple prime
+ ‵  Reversed prime
+ ‶  Reversed double prime
+ ‷  Reversed triple prime
+ ʹ  Modifier letter prime
+ ʺ  Modifier letter double prime
+
+Quotation marks:
+ '  Typewriter single quote (same code point as typewriter apostrophe)
+ "  Typewriter double quote
+ ‘  Left single quotation mark
+ ’  Right single quotation mark (same code point as punctuation apostrophe)
+ “  Left double quotation mark
+ ”  Right double quotation mark
+ ‚  Single low-9 quotation mark
+ ‛  Single high-reversed-9 quotation mark
+ „  Double low-9 quotation mark
+ ‟  Double high-reversed-9 quotation mark
+ ‹  Left-pointing single angle quotation mark
+ ›  Right-pointing single angle quotation mark
+ «  Left-pointing double angle quotation mark
+ »  Right-pointing double angle quotation mark
+ 「  Left corner bracket
+ 」  Right corner bracket
+ 『  Left white corner bracket
+ 』  Right white corner bracket
+
+Hyphen, minus sign, dash:
+ -  Typewriter hyphen, minus, dash
+ ‐  Hyphen (There are also non-breaking hyphen and soft hyphen for line-break control purposes.)
+ −  Minus sign
+ ‒  Figure dash (The same width as a digit.)
+ –  En dash
+ —  Em dash (Two em dashes can represent the Chinese punctuation 破折号.)
+ ―  Horizontal bar (Quotation dash)
+ ⸺  Two-em dash
+ ⸻  Three-em dash
+ ⁃  Hyphen bullet
+
+Slash:
+ /  Solidus
+ ⁄  Fraction slash (may change the rendering of the two numbers adjacent to it.)
+ ∕  Division slash
+ ⧸  Big solidus
+ \  Reverse solidus
+ ⧵  Reverse solidus operator
+ ⧹  Big reverse solidus
+
+Middle dot:
+ ·  Middle dot
+ •  Bullet
+ ‧  Hyphenation point (used in dictionaries)
+ ⋅  Mathematical dot operator
+ ∙  Mathematical bullet operator
+
+Space:
+◀ ▶ (Normal) space
+◀ ▶ En space
+◀ ▶ Em space
+◀ ▶ Three-per-em space (thick space)
+◀ ▶ Four-per-em space (mid space)
+◀ ▶ Six-per-em space
+◀ ▶ Figure space (The same width as a digit.)
+◀ ▶ Punctuation space (The same width as a period.)
+◀ ▶ Thin space
+◀ ▶ Hair space
+◀ ▶ Medium mathematical space
+◀　▶ Full-width space (The same width as a Han character.)

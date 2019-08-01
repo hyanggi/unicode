@@ -1,0 +1,13 @@
+#!/usr/bin/env bash
+
+# This script outputs some strings for testing Combining Grapheme Joiner (CGJ).
+# The name (CGJ) is confusing and doesn't reflect the functions of the character.
+# CGJ is used for format control purposes but disguised (formally categorized) as a combining character.
+# CGJ has multiple functions.
+
+echo 'הַֽ הַֽ הֽ͏ַ' # Indicate the importance of the order of combining characters (Hebrew)
+
+# The following uses of CGJ should have no visual effect and are only for text processing purposes.
+
+echo 'ch c͏h' # Indicate "ch" is 2 letters rather than 1 letter (Czech, Slovak)
+echo 'ü u͏̈' # Distinguish between umlaut and diaeresis (German)
