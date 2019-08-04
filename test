@@ -18,10 +18,6 @@ echo 'क्ष' # Devanagari letters form ligatures
 echo 'fi' # Latin letters may form ligatures or be cursively connected depending on the font
 echo '!=' # Programming symbols may form ligatures (in this case '≠') when using a font with programming ligatures
 
-# Vertical and horizontal forms
-echo '，。《》' # East Asian symbols take different forms in vertical text and horizontal text
-# Other characters are either rotated or kept upright depending on the character
-
 # Emoji
 echo '3⃣ 3️⃣' # Enclosing Keycap
 echo '👌🏻' # Emoji skin color modifier
