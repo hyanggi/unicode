@@ -1,11 +1,11 @@
 #!/usr/bin/env bash
 
-# This script outputs some strings for testing Combining Grapheme Joiner (CGJ).
-# The name (CGJ) is confusing and doesn't reflect the functions of the character.
-# CGJ is used for format control purposes but disguised (formally categorized) as a combining character.
+# This script outputs some strings for testing the Combining Grapheme Joiner (CGJ).
+# The name ("CGJ") is confusing and doesn't reflect the functions of this character.
+# CGJ is used for control purposes but is disguised (formally categorized) as a combining character.
 # CGJ has multiple functions.
 
-echo 'הַֽ הַֽ הֽ͏ַ' # Indicate the importance of the order of combining characters (Hebrew)
+echo 'הַֽ הַֽ הֽ͏ַ' # Signify the importance of the order of combining characters (Hebrew)
 
 # The following uses of CGJ should have no visual effect and are only for text processing purposes.
 

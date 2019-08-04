@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 
 # This script outputs some strings for testing Unicode variation selectors.
-# Font support required to see the differences between variations.
+# Font support required to see the differences between variants.
 
 # Mathematical
 echo '⊊⊊︀'

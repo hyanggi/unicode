@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 
-# This script outputs some Unicode strings with characters that combine with each other.
+# This script outputs some Unicode strings which require complex text rendering.
 
 # Combining characters
 echo 'ǚǚ' # Latin
@@ -10,6 +10,17 @@ echo 'कि' # Devanagari
 # Other characters that combine
 echo '한한' # Conjoining Hangul Jamo
 echo '˨˩˦' # Tone marks (Tone 214)
+
+# Other ligatures and connected forms
+echo 'خخخ' # Arabic letters are connected and take contextual forms
+echo 'لا' # Arabic letters form ligatures
+echo 'क्ष' # Devanagari letters form ligatures
+echo 'fi' # Latin letters may form ligatures or be cursively connected depending on the font
+echo '!=' # Programming symbols may form ligatures (in this case '≠') when using a font with programming ligatures
+
+# Vertical and horizontal forms
+echo '，。《》' # East Asian symbols take different forms in vertical text and horizontal text
+# Other characters are either rotated or kept upright depending on the character
 
 # Emoji
 echo '3⃣ 3️⃣' # Enclosing Keycap
