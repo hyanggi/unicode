@@ -4,26 +4,33 @@ use strict;
 use warnings;
 
 use open ':locale';
-use Unicode::UCD 'charblock';
+use Unicode::UCD 'prop_invmap';
 
-my $block_pre = '';
-for (my $i=0; $i<0x2000; ++$i) {
-	my $block = charblock(0x10 * $i);
-	if ($block ne $block_pre) {
-		print "\n", $block, "\n";
-		$block_pre = $block;
-	}
-	next if ($block eq 'CJK Unified Ideographs');
-	next if ($block eq 'CJK Unified Ideographs Extension A');
+my ($block_begins, $block_names, $format, $default) = prop_invmap('Block');
+
+for (my $i = 0; $i < @$block_names - 1; ++$i) {
+	print "\n";
+	my $block = $block_names->[$i];
+	print $block, "\n";
+
+	next if ($block eq 'No_Block');
+	next if ($block =~ /Surrogates$/);
+	next if ($block =~ /Private Use Area/);
+
+	next if ($block =~ /^CJK Unified Ideographs/);
+	next if ($block =~ /^CJK Compatibility Ideographs/);
 	next if ($block eq 'Hangul Syllables');
+	next if ($block =~ /^Tangut/);
 
-	my $line = '';
-	for (my $j=0; $j<0x10; ++$j) {
-		my $codepoint = chr 0x10 * $i + $j;
-		next if ($codepoint =~ /^\pC$/);
-		$line .= '  ';
-		$line .= "\x{25cc}" if ($codepoint =~ /^\pM$/);
-		$line .= $codepoint;
+	for (my $j = $block_begins->[$i]; $j < $block_begins->[$i + 1]; $j += 0x10) {
+		my $line = '';
+		for (my $k = 0; $k < 0x10; ++$k) {
+			my $codepoint = chr $j + $k;
+			next if ($codepoint =~ /^\pC$/);
+			$line .= '  ';
+			$line .= "\x{25cc}" if ($codepoint =~ /^\pM$/);
+			$line .= $codepoint;
+		}
+		printf "%x%s\n", $j, $line unless ($line eq '');
 	}
-	printf "%x%s\n", 0x10 * $i, $line unless ($line eq '');
 }
