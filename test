@@ -2,18 +2,24 @@
 
 # This script outputs some Unicode strings which require complex text rendering.
 
-# Combining characters
-echo 'ǚǚ' # Latin
-echo 'อั' # Thai
-echo 'कि' # Devanagari
+# Combining characters (Marks)
+echo 'ǚǚ' # Nonspacing mark (Latin)
+echo 'อั' # Nonspacing mark (Thai)
+echo 'कि' # Spacing mark (Devanagari)
+echo 'கெ' # Spacing mark (Tamil)
+echo 'கொ' # Spacing mark (Tamil)
+echo '字⃝' # Enclosing mark
+echo 'n͠g' # Double diacritic nonspacing mark
 
 # Other characters that combine
 echo '한한' # Conjoining Hangul Jamo
 echo '˨˩˦' # Tone marks (Tone 214)
 
-# Other ligatures and connected forms
+# Other complex text
+# Arabic and Hebrew text is written from right to left
 echo 'خخخ' # Arabic letters are connected and take contextual forms
 echo 'لا' # Arabic letters form ligatures
+echo 'ᠵᠠᠷᠢᠭ ᠵᠡᠷᠢᠭ' # Mongolian letters take different forms according to the gender of the word (which depends on the vowels in the word) (However the differing vowel letter itself is displayed identically)
 echo 'क्ष' # Devanagari letters form ligatures
 echo 'fi' # Latin letters may form ligatures or be cursively connected depending on the font
 echo '!=' # Programming symbols may form ligatures (in this case '≠') when using a font with programming ligatures
