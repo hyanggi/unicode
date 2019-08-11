@@ -8,6 +8,7 @@ use warnings;
 use utf8;
 use open ':locale';
 use charnames ':full';
+use Unicode::UCD 'charprop';
 
 sub print_cpinfo {
 	my $codepoint = $_[0];
@@ -22,6 +23,9 @@ sub print_cpinfo {
 		$cpname = 'unknown';
 	}
 	$cpdesc .= "\e[36m \e[35m" . $cpname;
+
+	my $cpcate = lc charprop(ord $codepoint, 'Gc');
+	$cpdesc .= "\e[36m \e[35m(" . $cpcate . ')';
 
 	print "\e[36m<", $cpdesc, "\e[36m>\e[0m";
 }
