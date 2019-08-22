@@ -1,0 +1,26 @@
+#!/usr/bin/env bash
+
+# This script outputs some Indic text for test.
+# Indic scripts (aka Brahmic scripts) generally have many combining marks and ligatures
+# and require complex text rendering to correctly display.
+
+# Each of the following strings should be displayed as a single glyph.
+
+echo 'कि' # Devanagari
+echo 'கே' # Tamil
+echo 'કિ' # Gujarati
+echo 'ਕਿ' # Gurmukhi
+echo 'ಕಿ' # Kannada
+echo 'యీ' # Telugu
+echo 'কি' # Bengali
+echo 'കെ' # Malayalam
+echo 'རྐྱ' # Tibetan
+echo 'ඵේ' # Sinhala
+echo 'କେ' # Oriya
+echo 'ฐู' # Thai
+echo 'ກົ້' # Lao
+echo 'ម្សៅ' # Khmer
+echo 'ဃြ' # Myanmar
+echo 'ꦧꦾꦺꦴꦂ' # Javanese
+echo 'ᬩ᭄ᬬᭀᬃ' # Balinese
+echo 'ᮘᮡᮦᮁ' # Sundanese
