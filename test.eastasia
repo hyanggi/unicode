@@ -1,0 +1,87 @@
+#!/usr/bin/env bash
+
+# This script outputs some East Asian text for test.
+# East Asian scripts are generally characterized by
+# the big amounts of characters and the complex glyphs of the characters.
+
+# -------------- Han characters ----------------
+# Han characters are or were used in Chinese, Japanese, Korean, Vietnamese, Zhuang, etc.
+
+# Han character variants for "dragon" (East Asian mythological creatures)
+echo '龍' # Traditional standard form
+echo '竜' # Japanese Shinjitai (New Character Form). It is also a traditional variant form.
+echo '龙' # Simplified Chinese form
+echo '竜𦱉𢅛𠊋㰍𥫈龒䰱' # Traditional variant forms (as listed in the Kangxi dictionary)
+# Unicode unifies variants that slightly differ in shape as one character,
+# but doesn't unify variants that significantly differ.
+# These variants (incl. all of the above) are encoded seperatly in Unicode.
+
+# Han character small variants can be selected using these ways:
+echo '艹艹艹' # Using compatibility characters
+echo '艹艹︀艹︁' # Using standardized variation sequences that correspond to compatibility characters
+echo '艹󠄀艹󠄁艹󠄂' # Using ideographic variation sequences
+# Han character variants are mostly used in Japan. They are best supported by Japanese fonts.
+
+# Han characters used in non-standard Chinese variaties
+echo '俺' # Northern Mandarin (fist-person singular pronoun, first-person plural exclusive pronoun)
+echo '咗' # Cantonese (perfective particle; like '了' in standard Chinese)
+echo '𠲎' # Wu (interrogative particle for yes/no questions; like '吗' in standard Chinese)
+echo '𧿨' # Sichuanese (to move the body randomly, to struggle, to resist)
+
+# Han characters created in Japanese and Korean. There are only a few such characters.
+# They are called "national characters" (Korean "Gukja"; Japanese "Kokuji").
+# They are usually considered as Han characters to differentiate them from the native scripts of Janpanese and Korean.
+echo '乭' # Korean ("stone")
+echo '辻' # Japanese ("crossroads")
+
+# Han-like characters created in Vietnamese and Zhuang. There are lots of such characters.
+# They are usually not considered as Han characters to differentiate them from "real" Han characters.
+# But Unicode treats them as extensions to the Han script.
+echo '𡨸喃' # Vietnamese (Vietnamese locally created characters, lit. "southern characters"). The second character '喃' is also used in Chinese but with different usage.
+echo '𭨡𮄫' # Zhuang (Zhuang locally created character, lit. "immature characters")
+
+
+# -------- Japanese and Korean scripts -----------
+
+# Japanese Kana are syllabics derived from Han characters.
+echo 'なナ' # Hiragana and Katakana
+echo '𛁾𛁿𛂀' # Hentaigana (old variant forms of Hiragana. They are closer in shape to the Han characters they are derived from.)
+echo '南名奈' # Man'yōgana (original Han characters used as Kana. Modern 'な' and 'ナ' are derived from '奈'.)
+
+# Korean Hangul is influenced by Han in shape and block arrangement.
+echo '한' # Unicode precomposed Hangul syllable
+echo '한ᄒᆞᆫ' # Unicode conjoining Hangul Jamo. Useful for composing syllables that do not exist in modern Korean.
+
+
+# -------- Other scripts related to Han -----------
+
+# Nüshu (女書) is a syllabic script derived from Han characters.
+echo '𛆁𛈬' # ("Nüshu")
+
+# Tangut script (西夏文) is an ancient logographic script similar to Han.
+echo '𗼇𗟲'
+
+# Khitan large script (契丹大字) is an ancient logographic script similar to Han.
+
+# Khitan small script (契丹小字) is an ancient script.
+# The characters are similar to Han in shape. Some are semantic and some are phonetic.
+# Each word is written as a square block which consists of 1-7 characters.
+
+# Jurchen script (女真文) is an ancient script.
+# The characters are similar to Han in shape. Some are semantic and some are phonetic.
+
+
+# -------- Other scripts not related to Han -----------
+
+# Modern Yi script (Nosu script) is a syllabic derived from the classical Yi script (logographic).
+echo 'ꆈꌠꁱꂷ' # ("Nosu script")
+
+# Sui script (水書) is a logographic script for the Sui language.
+
+# Naxi Dongba (納西東巴) is a pictographic system used by the Naxi people.
+
+# Naxi Geba (納西哥巴) is a syllabary for the Naxi language.
+
+
+# Some scripts are not given examples in this file.
+# These scripts are still in the process of being encoded in Unicode.
