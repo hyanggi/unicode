@@ -11,18 +11,35 @@ echo 'கொ' # Spacing mark (Tamil)
 echo '字⃝' # Enclosing mark
 echo 'n͠g' # Double diacritic nonspacing mark
 
-# Other characters that combine
-echo '한한' # Conjoining Hangul Jamo
-echo '˨˩˦' # Tone marks (Tone 214)
+# Conjoining Hangul Jamo
+echo '한한'
 
-# Other complex text
-# Arabic and Hebrew text is written from right to left
-echo 'خخخ' # Arabic letters are connected and take contextual forms
-echo 'لا' # Arabic letters form ligatures
-echo 'ᠵᠠᠷᠢᠭ ᠵᠡᠷᠢᠭ' # Mongolian letters take different forms according to the gender of the word (which depends on the vowels in the word) (However the differing vowel letter itself is displayed identically)
+# Ligatures
 echo 'क्ष' # Devanagari letters form ligatures
-echo 'fi' # Latin letters may form ligatures or be cursively connected depending on the font
-echo '!=' # Programming symbols may form ligatures (in this case '≠') when using a font with programming ligatures
+echo 'لا' # Arabic letters form ligatures
+echo '˨˩˦' # IPA tone letters form ligatures
+echo 'fi' # Latin letters may form ligatures when using certain fonts
+echo '!=' # Programming symbols may form ligatures (in this case '≠') when using special programming fonts
+
+# Text direction support
+# Arabic and Hebrew text is right-to-left, commonly mixed with left-to-right text
+#   Unicode defines a complex algorithm for handling bidirectional text
+# Chinese, Korean, Japanese text can be top-to-bottom, sometimes mixed with other scripts
+#   Unicode defines which characters should be rotated, held upright or modified in vertical text
+
+# Cursive scripts
+echo 'خخخ' # Arabic letters are cursively connected and take contextual forms
+# Mongolian letters are also cursively connected and take contextual forms
+# Latin letters may be cursively connected when using certain fonts
+
+# Mongolian scripts
+# Mongolian scripts are encoded using "abstract letters".
+# The "abstract letters" map to the written form through complex and sometimes irregular rules.
+# The same "abstract letter" can take on different forms (even in the same contextual position),
+#   and different "abstract letters" can take on the same form.
+# For example, the following two words differ only in the vowel of the first syllable,
+#   but the written forms differ only in the last consonant.
+echo 'ᠵᠠᠷᠢᠭ ᠵᠡᠷᠢᠭ'
 
 # Emoji
 echo '3⃣ 3️⃣' # Enclosing Keycap
