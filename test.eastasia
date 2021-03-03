@@ -7,12 +7,12 @@
 # -------------- Han characters ----------------
 # Han characters are or were used in Chinese, Japanese, Korean, Vietnamese, Zhuang, etc.
 
-# Han character variants for "dragon" (East Asian mythological creatures)
+# Han character variants for "dragon" (a kind of East Asian mythological creatures)
 echo '龍' # Traditional standard form
 echo '竜' # Japanese Shinjitai (New Character Form). It is also a traditional variant form.
 echo '龙' # Simplified Chinese form
 echo '竜𦱉𢅛𠊋㰍𥫈龒䰱' # Traditional variant forms (as listed in the Kangxi dictionary)
-# Unicode unifies variants that slightly differ in shape as one character,
+# Unicode unifies variants that slightly differ in shape as a single character,
 # but doesn't unify variants that significantly differ.
 # These variants (incl. all of the above) are encoded seperatly in Unicode.
 
@@ -22,7 +22,7 @@ echo '艹艹︀艹︁' # Using standardized variation sequences that correspond 
 echo '艹󠄀艹󠄁艹󠄂' # Using ideographic variation sequences
 # Han character variants are mostly used in Japan. They are best supported by Japanese fonts.
 
-# Han characters used in non-standard Chinese variaties
+# Han characters used in non-standard Chinese varieties
 echo '俺' # Northern Mandarin (fist-person singular pronoun, first-person plural exclusive pronoun)
 echo '咗' # Cantonese (perfective particle; like '了' in standard Chinese)
 echo '𠲎' # Wu (interrogative particle for yes/no questions; like '吗' in standard Chinese)
@@ -38,7 +38,7 @@ echo '辻' # Japanese ("crossroads")
 # They are usually not considered as Han characters to differentiate them from "real" Han characters.
 # But Unicode treats them as extensions to the Han script.
 echo '𡨸喃' # Vietnamese (Vietnamese locally created characters, lit. "southern characters"). The second character '喃' is also used in Chinese but with different usage.
-echo '𭨡𮄫' # Zhuang (Zhuang locally created character, lit. "immature characters")
+echo '𭨡𮄫' # Zhuang (Zhuang locally created characters, lit. "immature characters")
 
 
 # -------- Japanese and Korean scripts -----------
